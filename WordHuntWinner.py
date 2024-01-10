@@ -33,10 +33,10 @@ def lookForPath(grid:list, visitedCoords:list, rowCoord:int, colCoord:int, wordF
                         return True if len(wordFragment) == 1 else lookForPath(grid, visitedCoordsCopy, rowIndex, colIndex, wordFragment[1:])
     return False
 
-def mergeSort(arr:list):
+def mergeSort(arr:list) -> list:
     return arr if len(arr) <= 1 else merge(mergeSort(arr[:len(arr)//2]), mergeSort(arr[len(arr)//2:]))
 
-def merge(left:list, right:list):
+def merge(left:list, right:list) -> list:
     mergedList = []
     leftIndex = rightIndex = 0
     while leftIndex < len(left) and rightIndex < len(right):
@@ -49,7 +49,7 @@ def merge(left:list, right:list):
     mergedList += left[leftIndex:] + right[rightIndex:]
     return mergedList
 
-def getInputLetters(length:int):
+def getInputLetters(length:int) -> str:
     given = input("Enter letters as a line: ")
     return given if len(given) == length else getInputLetters(length)
 
