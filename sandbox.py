@@ -1,3 +1,4 @@
+# ignore this file its just random testing trash or smth
 accents = ""
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 # with open("dictionaries/spanishFullCopy.txt", 'r', encoding='utf-8') as spanish:
