@@ -1,5 +1,3 @@
-from icecream import ic # ice cream so good, gang gang
-
 def badLettersInWord(unusedLetters:str, word:str) -> bool:
     wordSet = set(word)
     for letter in unusedLetters:

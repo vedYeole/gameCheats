@@ -42,7 +42,7 @@ def main():
     charList = list(given.upper())
     unusedLetters = ''.join([letter for letter in alphabet if letter not in charList])
     wordList = []
-    with open("dictionaries/spanishSmall.txt",'r', encoding='utf-8') as textFile:
+    with open("dictionaries/englishSmall.txt",'r', encoding='utf-8') as textFile:
         for word in textFile:
             word = word.strip() # get rid of that \n
             if len(word) >= 3:
